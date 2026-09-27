@@ -28,13 +28,13 @@
           },
           colors: {
             brand: {
-              ice: '#F4F8FB',      // Fundo suave com tom azul claro
-              tint: '#E4EFF6',     // Cartões e divisórias em azul suave
-              border: '#CFE2EE',   // Contornos sutis
-              sky: '#3983AA',      // Azul clássico intermediário
-              navy: '#193344',     // Azul escuro institucional
-              deep: '#0F212D',     // Azul marinho profundo para o rodapé
-              gold: '#C59E50',     // Detalhes em dourado
+              ice: '#F4F8FB',
+              tint: '#E4EFF6',
+              border: '#CFE2EE',
+              sky: '#3983AA',
+              navy: '#193344',
+              deep: '#0F212D',
+              gold: '#C59E50',
             }
           }
         }
@@ -44,7 +44,7 @@
 </head>
 <body class="bg-brand-ice text-[#24333D] font-sans antialiased selection:bg-brand-sky selection:text-white">
 
-  <!-- BARRA DE NAVEGAÇÃO -->
+  <!-- BARRA DE NAVEGAÇÃO COM CHIPS HORIZONTAIS MOBILE -->
   <header class="fixed top-0 left-0 right-0 z-40 bg-brand-ice/95 backdrop-blur-md border-b border-brand-border/80 shadow-sm transition-all">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#inicio" class="flex items-center gap-3">
@@ -63,17 +63,29 @@
         <a href="#pratica" class="hover:text-brand-sky transition-colors">Asanas</a>
         <a href="#espaco" class="hover:text-brand-sky transition-colors">Espaço</a>
         <a href="#comunidade" class="hover:text-brand-sky transition-colors">Vivências</a>
-        <a href="#horarios" class="hover:text-brand-sky transition-colors">Horários & Valores</a>
+        <a href="#horarios" class="hover:text-brand-sky transition-colors">Horários</a>
         <a href="#localizacao" class="hover:text-brand-sky transition-colors">Contato</a>
       </nav>
 
-      <!-- Botão Menu Mobile -->
+      <!-- Botão Menu Hambúrguer Mobile (Para quem desejar a lista expandida) -->
       <button id="mobile-menu-btn" class="lg:hidden text-brand-navy p-2 focus:outline-none" aria-label="Abrir menu">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
-    <!-- Menu Dropdown Mobile -->
+    <!-- Barra de Chips Horizontais Visíveis no Mobile -->
+    <nav class="lg:hidden bg-brand-tint/70 border-t border-brand-border/70 px-4 py-2 overflow-x-auto flex items-center gap-2 text-xs whitespace-nowrap scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <a href="#inicio" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Início</a>
+      <a href="#historia" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Nossa História</a>
+      <a href="#sobre" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">O Hatha Yoga</a>
+      <a href="#pratica" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Asanas</a>
+      <a href="#espaco" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Espaço</a>
+      <a href="#comunidade" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Vivências</a>
+      <a href="#horarios" class="px-3.5 py-1.5 rounded-full bg-brand-sky text-white font-semibold border border-brand-sky shadow-xs transition-all">Horários</a>
+      <a href="#localizacao" class="px-3.5 py-1.5 rounded-full bg-white text-brand-navy font-semibold border border-brand-border shadow-xs active:bg-brand-sky active:text-white transition-all">Contato</a>
+    </nav>
+
+    <!-- Menu Dropdown Mobile Alternativo -->
     <div id="mobile-menu" class="hidden lg:hidden bg-brand-ice border-b border-brand-border px-6 py-5 flex flex-col space-y-4 shadow-lg">
       <a href="#inicio" class="mobile-nav-link text-brand-navy font-medium">Início</a>
       <a href="#historia" class="mobile-nav-link text-brand-navy font-medium">Nossa História</a>
@@ -81,13 +93,13 @@
       <a href="#pratica" class="mobile-nav-link text-brand-navy font-medium">Asanas</a>
       <a href="#espaco" class="mobile-nav-link text-brand-navy font-medium">Espaço</a>
       <a href="#comunidade" class="mobile-nav-link text-brand-navy font-medium">Vivências</a>
-      <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários & Valores</a>
+      <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários</a>
       <a href="#localizacao" class="mobile-nav-link text-brand-navy font-medium">Contato</a>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 px-6 bg-gradient-to-b from-brand-tint/60 to-brand-ice">
+  <!-- HERO SECTION (Espaçamento superior ajustado para a barra extra) -->
+  <section id="inicio" class="pt-36 pb-16 md:pt-36 md:pb-24 px-6 bg-gradient-to-b from-brand-tint/60 to-brand-ice">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7 text-center lg:text-left">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-tint text-brand-navy text-xs tracking-widest uppercase font-semibold mb-6 border border-brand-sky/20">
@@ -145,14 +157,14 @@
   <!-- NOSSA HISTÓRIA & TRADIÇÃO -->
   <section id="historia" class="py-20 px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-start">
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
         <div class="space-y-3">
           <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_jovem.jpg" alt="Prof. Ari jovem na prática do Yoga" class="w-full h-full object-cover">
           </div>
           <p class="text-[11px] text-center text-[#556976] italic">Estudo e dedicação desde a juventude</p>
         </div>
-        <div class="space-y-3">
+        <div class="space-y-3 pt-6">
           <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_alunos.jpg" alt="Prof. Ari com alunos e professores" class="w-full h-full object-cover">
           </div>
@@ -218,11 +230,11 @@
         </div>
       </div>
 
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-center">
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
         <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
           <img src="Imagens/Aluna_em_preto_branco1.png" alt="Postura clássica de Yoga" class="w-full h-full object-cover">
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
+        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border mt-6">
           <img src="Imagens/Aluna_em_preto_branco2.png" alt="Concentração e respiração" class="w-full h-full object-cover">
         </div>
       </div>
@@ -354,24 +366,16 @@
 
   <!-- HORÁRIOS & TURMAS -->
   <section id="horarios" class="py-20 px-6 max-w-5xl mx-auto">
-    <div class="text-center space-y-4 mb-10">
-      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal & Investimento</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas, Horários e Valores</h2>
+    <div class="text-center space-y-4 mb-12">
+      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas e Horários</h2>
       <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
         Práticas conduzidas com rigor técnico e turmas reduzidas para assegurar acompanhamento atento a cada aluno.
       </p>
-
-      <!-- Badge de Destaque para Duração das Aulas -->
-      <div class="pt-2">
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-tint border border-brand-border text-brand-navy text-xs font-semibold">
-          <i data-lucide="clock" class="w-4 h-4 text-brand-sky"></i>
-          <span>Duração de cada aula: <strong>1h30 (90 minutos)</strong></span>[cite: 21]
-        </div>
-      </div>
     </div>
 
-    <!-- Tabela de Horários Limpa em 3 Colunas (Sem a coluna Duração redundante) -->
-    <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-12">
+    <!-- Tabela de Horários -->
+    <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-8">
       <div class="overflow-x-auto">
         <table class="w-full text-left border-collapse">
           <thead>
@@ -426,60 +430,7 @@
       </div>
     </div>
 
-    <!-- BLOCO DE VALORES / PLANOS MENSAIS -->
-    <div class="mb-10">
-      <div class="text-center mb-6">
-        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Planos de Prática</span>
-        <h3 class="font-serif text-2xl font-bold text-brand-navy">Investimento Mensal</h3>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- 1x por semana -->
-        <div class="bg-white rounded-3xl p-7 border border-brand-border shadow-sm text-center flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-sky bg-brand-tint px-3 py-1 rounded-full mb-4">1x por Semana</span>
-            <div class="my-3">
-              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 160</span>
-              <span class="text-xs text-[#556976] font-medium">/ mês</span>
-            </div>
-            <p class="text-xs text-[#556976] leading-relaxed">
-              1 aula semanal de <strong>1h30</strong>. Ideal para quem está iniciando ou integrando a prática à rotina.
-            </p>
-          </div>
-        </div>
-
-        <!-- 2x por semana -->
-        <div class="bg-brand-tint/70 rounded-3xl p-7 border-2 border-brand-sky shadow-md text-center flex flex-col justify-between relative hover:shadow-lg transition-shadow">
-          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-sky text-white text-[10px] uppercase font-bold tracking-widest px-3.5 py-0.5 rounded-full shadow-sm">Mais Procurado</span>
-          <div>
-            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-navy bg-white/80 px-3 py-1 rounded-full mb-4">2x por Semana</span>
-            <div class="my-3">
-              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 180</span>
-              <span class="text-xs text-[#556976] font-medium">/ mês</span>
-            </div>
-            <p class="text-xs text-[#475C6A] leading-relaxed">
-              2 aulas semanais de <strong>1h30</strong>. Ritmo equilibrado para maior constância e benefícios físicos e mentais.
-            </p>
-          </div>
-        </div>
-
-        <!-- 3x por semana -->
-        <div class="bg-white rounded-3xl p-7 border border-brand-border shadow-sm text-center flex flex-col justify-between hover:shadow-md transition-shadow">
-          <div>
-            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-sky bg-brand-tint px-3 py-1 rounded-full mb-4">3x por Semana</span>
-            <div class="my-3">
-              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 200</span>
-              <span class="text-xs text-[#556976] font-medium">/ mês</span>
-            </div>
-            <p class="text-xs text-[#556976] leading-relaxed">
-              3 aulas semanais de <strong>1h30</strong>. Prática intensiva para maior aprofundamento e vigor interior.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Chamada Centralizada para Agendamento e Vagas -->
+    <!-- Chamada Centralizada para Agendamento -->
     <div class="bg-brand-tint/60 rounded-3xl p-6 md:p-8 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
       <div class="space-y-1">
         <h4 class="font-serif text-xl font-bold text-brand-navy flex items-center justify-center md:justify-start gap-2">
@@ -564,7 +515,7 @@
   <!-- BOTÃO FLUTUANTE DE WHATSAPP -->
   <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20aulas%20de%20Yoga" 
      target="_blank" 
-     class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group" 
+     class="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 flex items-center justify-center group"
      aria-label="Falar pelo WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7 fill-white/20"></i>
     <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out font-medium text-sm pl-0 group-hover:pl-2">
@@ -574,10 +525,8 @@
 
   <!-- SCRIPTS -->
   <script>
-    // Inicialização dos ícones Lucide
     lucide.createIcons();
 
-    // Menu Mobile
     const menuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-nav-link');
