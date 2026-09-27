@@ -6,7 +6,7 @@
   <title>Instituto Arynanda | Hatha Yoga Clássico em Osasco</title>
   <meta name="description" content="Instituto de Yoga Clássico Arynanda em Osasco. Ética, tradição e seriedade no ensino do Hatha Yoga.">
 
-  <!-- Favicon Real do Instituto -->
+  <!-- Favicon do Instituto -->
   <link rel="icon" type="image/jpeg" href="Imagens/favicon.jpg">
 
   <!-- Tailwind CSS CDN -->
@@ -14,7 +14,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -28,11 +28,13 @@
           },
           colors: {
             brand: {
-              cream: '#FAF8F5',
-              sand: '#F3EFEA',
-              sage: '#526E5F',
-              forest: '#23372E',
-              gold: '#C49A45',
+              ice: '#F4F8FB',      // Fundo suave com tom azul claro
+              tint: '#E4EFF6',     // Cartões e divisórias em azul suave
+              border: '#CFE2EE',   // Contornos sutis
+              sky: '#3983AA',      // Azul clássico intermediário
+              navy: '#193344',     // Azul escuro institucional
+              deep: '#0F212D',     // Azul marinho profundo para o rodapé
+              gold: '#C59E50',     // Detalhes em dourado
             }
           }
         }
@@ -40,56 +42,58 @@
     }
   </script>
 </head>
-<body class="bg-brand-cream text-[#2D312E] font-sans antialiased selection:bg-brand-sage selection:text-white">
+<body class="bg-brand-ice text-[#24333D] font-sans antialiased selection:bg-brand-sky selection:text-white">
 
   <!-- BARRA DE NAVEGAÇÃO -->
-  <header class="fixed top-0 left-0 right-0 z-40 bg-brand-cream/95 backdrop-blur-md border-b border-brand-sand/80 shadow-sm transition-all">
+  <header class="fixed top-0 left-0 right-0 z-40 bg-brand-ice/95 backdrop-blur-md border-b border-brand-border/80 shadow-sm transition-all">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#inicio" class="flex items-center gap-3">
-        <img src="Imagens/Logo.jpg" alt="Logo Instituto Arynanda" class="h-12 w-12 object-contain rounded-full border border-brand-sand">
+        <img src="Imagens/Logo.jpg" alt="Logo Instituto Arynanda" class="h-11 w-11 object-contain rounded-full border border-brand-border bg-white p-0.5">
         <div class="flex flex-col">
-          <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-brand-forest">Instituto Arynanda</span>
-          <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-brand-sage uppercase font-semibold">Hatha Yoga Clássico</span>
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-brand-navy leading-tight">Instituto Arynanda</span>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-brand-sky uppercase font-semibold">Hatha Yoga Clássico</span>
         </div>
       </a>
 
       <!-- Menu Desktop -->
-      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-brand-forest/80">
-        <a href="#inicio" class="hover:text-brand-sage transition-colors">Início</a>
-        <a href="#historia" class="hover:text-brand-sage transition-colors">Nossa História</a>
-        <a href="#sobre" class="hover:text-brand-sage transition-colors">O Hatha Yoga</a>
-        <a href="#espaco" class="hover:text-brand-sage transition-colors">Espaço</a>
-        <a href="#comunidade" class="hover:text-brand-sage transition-colors">Vivências</a>
-        <a href="#horarios" class="hover:text-brand-sage transition-colors">Horários</a>
-        <a href="#localizacao" class="hover:text-brand-sage transition-colors">Contato</a>
+      <nav class="hidden xl:flex items-center space-x-6 text-sm font-medium text-brand-navy/80">
+        <a href="#inicio" class="hover:text-brand-sky transition-colors">Início</a>
+        <a href="#historia" class="hover:text-brand-sky transition-colors">Nossa História</a>
+        <a href="#sobre" class="hover:text-brand-sky transition-colors">O Hatha Yoga</a>
+        <a href="#pratica" class="hover:text-brand-sky transition-colors">Asanas</a>
+        <a href="#espaco" class="hover:text-brand-sky transition-colors">Espaço</a>
+        <a href="#comunidade" class="hover:text-brand-sky transition-colors">Vivências</a>
+        <a href="#horarios" class="hover:text-brand-sky transition-colors">Horários</a>
+        <a href="#localizacao" class="hover:text-brand-sky transition-colors">Contato</a>
       </nav>
 
-      <!-- Botão Contato Header -->
+      <!-- Botão Header -->
       <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20aulas%20do%20Instituto%20Arynanda" 
          target="_blank" 
-         class="hidden sm:inline-flex items-center gap-2 bg-brand-sage hover:bg-brand-forest text-white px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all shadow-sm">
+         class="hidden sm:inline-flex items-center gap-2 bg-brand-sky hover:bg-brand-navy text-white px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all shadow-sm">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>Agendar Aula</span>
       </a>
 
       <!-- Botão Menu Mobile -->
-      <button id="mobile-menu-btn" class="lg:hidden text-brand-forest p-2 focus:outline-none" aria-label="Abrir menu">
+      <button id="mobile-menu-btn" class="xl:hidden text-brand-navy p-2 focus:outline-none" aria-label="Abrir menu">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
     <!-- Menu Dropdown Mobile -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-brand-cream border-b border-brand-sand px-6 py-5 flex flex-col space-y-4 shadow-lg">
-      <a href="#inicio" class="mobile-nav-link text-brand-forest font-medium">Início</a>
-      <a href="#historia" class="mobile-nav-link text-brand-forest font-medium">Nossa História</a>
-      <a href="#sobre" class="mobile-nav-link text-brand-forest font-medium">O Hatha Yoga</a>
-      <a href="#espaco" class="mobile-nav-link text-brand-forest font-medium">Espaço</a>
-      <a href="#comunidade" class="mobile-nav-link text-brand-forest font-medium">Vivências</a>
-      <a href="#horarios" class="mobile-nav-link text-brand-forest font-medium">Horários</a>
-      <a href="#localizacao" class="mobile-nav-link text-brand-forest font-medium">Contato</a>
+    <div id="mobile-menu" class="hidden xl:hidden bg-brand-ice border-b border-brand-border px-6 py-5 flex flex-col space-y-4 shadow-lg">
+      <a href="#inicio" class="mobile-nav-link text-brand-navy font-medium">Início</a>
+      <a href="#historia" class="mobile-nav-link text-brand-navy font-medium">Nossa História</a>
+      <a href="#sobre" class="mobile-nav-link text-brand-navy font-medium">O Hatha Yoga</a>
+      <a href="#pratica" class="mobile-nav-link text-brand-navy font-medium">Asanas</a>
+      <a href="#espaco" class="mobile-nav-link text-brand-navy font-medium">Espaço</a>
+      <a href="#comunidade" class="mobile-nav-link text-brand-navy font-medium">Vivências</a>
+      <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários</a>
+      <a href="#localizacao" class="mobile-nav-link text-brand-navy font-medium">Contato</a>
       <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20aulas%20do%20Instituto%20Arynanda" 
          target="_blank" 
-         class="inline-flex items-center justify-center gap-2 bg-brand-sage text-white px-5 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase">
+         class="inline-flex items-center justify-center gap-2 bg-brand-sky text-white px-5 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>Falar no WhatsApp</span>
       </a>
@@ -97,36 +101,62 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 px-6 bg-gradient-to-b from-brand-sand/60 to-brand-cream relative">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <section id="inicio" class="pt-28 pb-16 md:pt-36 md:pb-24 px-6 bg-gradient-to-b from-brand-tint/60 to-brand-ice">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       <div class="lg:col-span-7 text-center lg:text-left">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-sand text-brand-forest text-xs tracking-widest uppercase font-semibold mb-6 border border-brand-forest/10">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-tint text-brand-navy text-xs tracking-widest uppercase font-semibold mb-6 border border-brand-sky/20">
           <span>Ética • Tradição • Seriedade</span>
         </div>
-        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-forest font-bold leading-tight mb-6">
+        <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-navy font-bold leading-[1.15] mb-6">
           Hatha Yoga Clássico <br class="hidden sm:inline">em Osasco
         </h1>
-        <p class="text-base sm:text-lg text-[#555E57] max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
-          Prática milenar transmitida com fidelidade e respeito ao ritmo de cada praticante. Desenvolva corpo, mente e vitalidade em um refúgio acolhedor.
+        <p class="text-base sm:text-lg text-[#475C6A] max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+          Prática milenar transmitida com fidelidade e respeito ao ritmo de cada praticante. Desenvolva vitalidade, respiração e tranquilidade em um ambiente sereno e acolhedor.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
           <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20experimental" 
              target="_blank" 
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-sage hover:bg-brand-forest text-white px-8 py-4 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
+             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-sky hover:bg-brand-navy text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
             <i data-lucide="message-circle" class="w-5 h-5"></i>
             <span>Agendar Aula Experimental</span>
           </a>
-          <a href="#historia" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-brand-forest/20 hover:border-brand-forest text-brand-forest px-8 py-4 rounded-full font-semibold transition-colors">
+          <a href="#historia" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-brand-navy/20 hover:border-brand-navy text-brand-navy px-7 py-3.5 rounded-full font-semibold transition-colors">
             <span>Conheça Nossa História</span>
           </a>
         </div>
       </div>
+
+      <!-- Imagem Hero -->
       <div class="lg:col-span-5 flex justify-center">
-        <div class="relative w-full max-w-sm sm:max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-          <img src="Imagens/Aula_postura_invertida.jpeg" alt="Postura de Hatha Yoga no Instituto Arynanda" class="w-full h-full object-cover">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-          <span class="absolute bottom-4 left-6 text-white text-xs font-light tracking-wide italic">Técnica, alinhamento e concentração</span>
+        <div class="relative w-full max-w-md rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white group">
+          <img src="Imagens/postura1.jpeg" 
+               alt="Prática de Yoga no Instituto Arynanda" 
+               class="w-full h-auto max-h-[440px] object-cover group-hover:scale-[1.02] transition-transform duration-500">
+          <div class="p-4 bg-white text-center border-t border-brand-border">
+            <p class="font-serif text-brand-navy font-bold text-base">Acolhimento, Conexão e Prática</p>
+            <p class="text-xs text-[#556976]">Técnicas acessíveis e adaptadas ao ritmo individual</p>
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER DE INSPIRAÇÃO -->
+  <section class="py-12 px-6 bg-brand-tint/50 border-y border-brand-border">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-4 flex justify-center">
+        <div class="w-48 sm:w-56 rounded-2xl overflow-hidden shadow-md border-2 border-white bg-white">
+          <img src="Imagens/postura5.jpeg" alt="Yoga é uma forma de mover sua vida" class="w-full h-auto object-cover">
+        </div>
+      </div>
+      <div class="md:col-span-8 text-center md:text-left space-y-3">
+        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Princípio Fundamental</span>
+        <blockquote class="font-serif text-2xl sm:text-3xl text-brand-navy font-bold leading-snug">
+          "Yoga não é apenas uma maneira de mover seu corpo, é uma forma de mover sua Vida!"
+        </blockquote>
+        <p class="text-sm text-[#475C6A] leading-relaxed">
+          Uma prática integrativa voltada ao desenvolvimento integral do ser humano, unindo disciplina física, lucidez mental e tranquilidade interior.
+        </p>
       </div>
     </div>
   </section>
@@ -135,24 +165,24 @@
   <section id="historia" class="py-20 px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-5 grid grid-cols-2 gap-4">
-        <div class="space-y-4">
-          <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-sand">
+        <div class="space-y-3">
+          <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_jovem.jpg" alt="Prof. Ari jovem na prática do Yoga" class="w-full h-full object-cover">
           </div>
-          <p class="text-[11px] text-center text-[#555E57] italic">Dedicação e estudo desde a juventude</p>
+          <p class="text-[11px] text-center text-[#556976] italic">Estudo e dedicação desde a juventude</p>
         </div>
-        <div class="space-y-4 pt-6">
-          <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-sand">
+        <div class="space-y-3 pt-6">
+          <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_alunos.jpg" alt="Prof. Ari com alunos e professores" class="w-full h-full object-cover">
           </div>
-          <p class="text-[11px] text-center text-[#555E57] italic">Gerações de praticantes formados</p>
+          <p class="text-[11px] text-center text-[#556976] italic">Gerações de praticantes formados</p>
         </div>
       </div>
 
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-semibold tracking-widest text-brand-sage uppercase">Tradição & Linhagem</span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">Décadas dedicadas ao ensino autêntico do Yoga</h2>
-        <div class="space-y-4 text-base text-[#4F5651] leading-relaxed">
+        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Tradição & Linhagem</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Décadas dedicadas ao ensino autêntico do Yoga</h2>
+        <div class="space-y-4 text-base text-[#475C6A] leading-relaxed">
           <p>
             O <strong>Instituto de Yoga Clássico Arynanda (IYCA)</strong> nasceu do compromisso profundo com as raízes originais do Hatha Yoga. Guiado pela dedicação do <strong>Prof. Ari</strong>, o instituto tornou-se referência em Osasco pela seriedade e precisão pedagógica.
           </p>
@@ -160,195 +190,288 @@
             Mais do que posturas físicas, nossa missão sempre foi preservar o Yoga como uma ciência integrativa do ser humano. Ao longo de décadas de história, o IYCA formou instrutores conceituados e acolheu centenas de alunos, mantendo a autenticidade sem misticismos exagerados.
           </p>
         </div>
-        <div class="pt-2 flex items-center gap-6 border-t border-brand-sand pt-6">
+        <div class="flex items-center gap-6 border-t border-brand-border pt-6">
           <div>
-            <span class="block font-serif text-2xl font-bold text-brand-forest">IYCA</span>
-            <span class="text-xs text-[#555E57]">Instituto de Yoga Clássico Arynanda</span>
+            <span class="block font-serif text-2xl font-bold text-brand-navy">IYCA</span>
+            <span class="text-xs text-[#556976]">Instituto de Yoga Clássico Arynanda</span>
           </div>
-          <div class="h-8 w-px bg-brand-sand"></div>
+          <div class="h-8 w-px bg-brand-border"></div>
           <div>
-            <span class="block font-serif text-2xl font-bold text-brand-forest">Tradição</span>
-            <span class="text-xs text-[#555E57]">Linha Clássica Tradicional</span>
+            <span class="block font-serif text-2xl font-bold text-brand-navy">Tradição</span>
+            <span class="text-xs text-[#556976]">Linha Clássica Tradicional</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FILOSOFIA & PRÁTICA -->
-  <section id="sobre" class="py-20 px-6 bg-brand-sand/40">
+  <!-- FILOSOFIA & O QUE É O YOGA -->
+  <section id="sobre" class="py-20 px-6 bg-brand-tint/40">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 space-y-6">
-        <span class="text-xs font-semibold tracking-widest text-brand-sage uppercase">O Método</span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">O que é o Hatha Yoga Clássico?</h2>
-        <p class="text-base text-[#4F5651] leading-relaxed">
-          O Hatha Yoga é uma prática milenar originada na Índia, baseada em exercícios e posturas precisas que atuam diretamente sobre as forças e a fisiologia sutil do praticante.
+        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">O Método</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">O que é o Hatha Yoga Clássico?</h2>
+        <p class="text-base text-[#475C6A] leading-relaxed">
+          O Hatha Yoga é uma prática milenar originada na Índia, com exercícios e técnicas precisas que demonstram surpreendente conhecimento das profundas forças e mecânicas do ser humano.
         </p>
-        <p class="text-base text-[#4F5651] leading-relaxed">
-          Em nossa escola, prezamos por <strong>técnicas adaptáveis</strong> que respeitam a biomecânica e o momento de cada aluno, tornando a prática acessível a todos que desejam desenvolver vitalidade, foco e serenidade.
+        <p class="text-base text-[#475C6A] leading-relaxed">
+          Em nossa escola prezamos por <strong>técnicas adaptáveis</strong> que estão ao alcance de todos aqueles que desejam trabalhar o corpo e a mente, desenvolvendo suas potencialidades físicas e psicológicas.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
-          <div class="p-5 rounded-2xl bg-white border border-brand-sand shadow-sm">
-            <i data-lucide="sun" class="w-6 h-6 text-brand-gold mb-2"></i>
-            <h3 class="font-serif font-bold text-brand-forest">Vitalidade</h3>
-            <p class="text-xs text-[#555E57] mt-1">Estimulação e fortalecimento do corpo de forma equilibrada.</p>
+          <div class="p-5 rounded-2xl bg-white border border-brand-border shadow-sm">
+            <i data-lucide="sun" class="w-6 h-6 text-brand-sky mb-2"></i>
+            <h3 class="font-serif font-bold text-brand-navy">Vitalidade</h3>
+            <p class="text-xs text-[#556976] mt-1">Fortalecimento e flexibilidade muscular equilibrada.</p>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-brand-sand shadow-sm">
-            <i data-lucide="wind" class="w-6 h-6 text-brand-sage mb-2"></i>
-            <h3 class="font-serif font-bold text-brand-forest">Respiração</h3>
-            <p class="text-xs text-[#555E57] mt-1">Pranayamas que acalmam o sistema nervoso e estabilizam a mente.</p>
+          <div class="p-5 rounded-2xl bg-white border border-brand-border shadow-sm">
+            <i data-lucide="wind" class="w-6 h-6 text-brand-sky mb-2"></i>
+            <h3 class="font-serif font-bold text-brand-navy">Respiração</h3>
+            <p class="text-xs text-[#556976] mt-1">Pranayamas que acalmam o sistema nervoso.</p>
           </div>
-          <div class="p-5 rounded-2xl bg-white border border-brand-sand shadow-sm">
-            <i data-lucide="shield-check" class="w-6 h-6 text-brand-forest mb-2"></i>
-            <h3 class="font-serif font-bold text-brand-forest">Equilíbrio</h3>
-            <p class="text-xs text-[#555E57] mt-1">Atenção e presença integradas no cotidiano.</p>
+          <div class="p-5 rounded-2xl bg-white border border-brand-border shadow-sm">
+            <i data-lucide="shield-check" class="w-6 h-6 text-brand-navy mb-2"></i>
+            <h3 class="font-serif font-bold text-brand-navy">Presença</h3>
+            <p class="text-xs text-[#556976] mt-1">Atenção e equilíbrio interior no dia a dia.</p>
           </div>
         </div>
       </div>
 
       <div class="lg:col-span-5 grid grid-cols-2 gap-4">
-        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white">
-          <img src="Imagens/Aluna_em_preto_branco1.png" alt="Postura de Yoga" class="w-full h-full object-cover">
+        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
+          <img src="Imagens/Aluna_em_preto_branco1.png" alt="Postura clássica de Yoga" class="w-full h-full object-cover">
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white mt-6">
-          <img src="Imagens/Aluna_em_preto_branco2.png" alt="Concentração no Yoga" class="w-full h-full object-cover">
+        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border mt-6">
+          <img src="Imagens/Aluna_em_preto_branco2.png" alt="Concentração e respiração" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MURAL DE ASANAS -->
+  <section id="pratica" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center space-y-4 mb-12">
+      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Fisiologia e Postura</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">A Arte e a Precisão dos Asanas</h2>
+      <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
+        Cada postura atua sobre centros específicos de energia, alongando cadeias musculares e cultivando estabilidade interna.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card Sirsasana -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
+        <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
+          <img src="Imagens/postura2.jpeg" alt="Sirsasana - Postura Invertida" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Sirsasana (Inversão)</h3>
+          <p class="text-sm text-[#475C6A] leading-relaxed">
+            Estimula a circulação, revitaliza as funções cerebrais e ensina a mente a permanecer serena diante de novos pontos de vista.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Mayurasana -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
+        <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
+          <img src="Imagens/postura3.jpeg" alt="Mayurasana - Postura do Pavão" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Mayurasana (Postura do Pavão)</h3>
+          <p class="text-sm text-[#475C6A] leading-relaxed">
+            Exige firmeza e equilíbrio, atuando vigorosamente sobre os órgãos abdominais e auxiliando no fortalecimento físico.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card Estabilidade -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
+        <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
+          <img src="Imagens/postura4.jpeg" alt="Fortalecendo o corpo, serenando a mente" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Estabilidade & Torção</h3>
+          <p class="text-sm text-[#475C6A] leading-relaxed">
+            Trabalha o alinhamento da coluna e a flexibilidade articular, fortalecendo a estrutura corporal e serenando a mente.
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- NOSSO ESPAÇO -->
-  <section id="espaco" class="py-20 px-6 max-w-6xl mx-auto">
-    <div class="text-center space-y-4 mb-12">
-      <span class="text-xs font-semibold tracking-widest text-brand-sage uppercase">Ambiente Dedicado</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">Nosso Espaço em Osasco</h2>
-      <p class="text-base text-[#555E57] max-w-xl mx-auto">
-        As aulas são realizadas em um ambiente acolhedor, silencioso e inspirador, especialmente estruturado para o bem-estar e recolhimento.
-      </p>
-    </div>
+  <section id="espaco" class="py-20 px-6 bg-brand-tint/40">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center space-y-4 mb-12">
+        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Ambiente Dedicado</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Nosso Espaço em Osasco</h2>
+        <p class="text-base text-[#475C6A] max-w-xl mx-auto">
+          As aulas são realizadas em um ambiente acolhedor e inspirador, especialmente mantido para proporcionar recolhimento e paz durante a prática.
+        </p>
+      </div>
 
-    <!-- Galeria de Fotos do Espaço Real -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-      <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-sand group">
-        <img src="Imagens/Espaco1.jpg" alt="Entrada e recepção do Instituto Arynanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-      </div>
-      <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-sand group">
-        <img src="Imagens/Espaco3.jpg" alt="Sala e área de acolhimento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-      </div>
-      <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-sand group">
-        <img src="Imagens/Espaco4.jpg" alt="Corredor e ambiente interno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-      </div>
-      <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-sand group">
-        <img src="Imagens/Espaco8.png" alt="Sala de prática de Yoga com tatames" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-tint group border border-brand-border">
+          <img src="Imagens/Espaco1.jpg" alt="Entrada do Instituto Arynanda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-tint group border border-brand-border">
+          <img src="Imagens/Espaco3.jpg" alt="Recepção e área de acolhimento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-tint group border border-brand-border">
+          <img src="Imagens/Espaco4.jpg" alt="Corredor do espaço" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm aspect-[4/3] bg-brand-tint group border border-brand-border">
+          <img src="Imagens/Espaco8.png" alt="Sala ampla de prática de Yoga" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
       </div>
     </div>
   </section>
 
   <!-- VIVÊNCIAS & COMUNIDADE -->
-  <section id="comunidade" class="py-20 px-6 bg-brand-sand/50">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center space-y-4 mb-12">
-        <span class="text-xs font-semibold tracking-widest text-brand-sage uppercase">Comunidade & Prática Coletiva</span>
-        <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">Vivências e Aulões</h2>
-        <p class="text-base text-[#555E57] max-w-2xl mx-auto">
-          Além das práticas regulares na escola, o Instituto promove encontros, aulões comunitários e estudos em grupo com nossos alunos.
-        </p>
+  <section id="comunidade" class="py-20 px-6 max-w-6xl mx-auto">
+    <div class="text-center space-y-4 mb-12">
+      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Comunidade & Prática Coletiva</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Vivências e Aulões</h2>
+      <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
+        Práticas especiais em contato com a natureza e eventos que celebram a união de alunos e professores.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
+        <div class="h-56 overflow-hidden">
+          <img src="Imagens/aula_parque.jpeg" alt="Aula de Yoga ao ar livre no parque" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Yoga ao Ar Livre</h3>
+          <p class="text-sm text-[#475C6A]">Práticas ao ar livre que renovam as energias e expandem a respiração.</p>
+        </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-3xl overflow-hidden border border-brand-sand shadow-sm flex flex-col">
-          <div class="h-56 overflow-hidden">
-            <img src="Imagens/aula_parque.jpeg" alt="Aula de Yoga ao ar livre no parque" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-xl font-bold text-brand-forest mb-2">Yoga ao Ar Livre</h3>
-            <p class="text-sm text-[#555E57]">Práticas em contato com a natureza que renovam as energias e expandem a respiração.</p>
-          </div>
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
+        <div class="h-56 overflow-hidden">
+          <img src="Imagens/Aulao_no_Sesi.jpeg" alt="Aulão de Yoga no SESI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
         </div>
-
-        <div class="bg-white rounded-3xl overflow-hidden border border-brand-sand shadow-sm flex flex-col">
-          <div class="h-56 overflow-hidden">
-            <img src="Imagens/Aulao_no_Sesi.jpeg" alt="Grande aulão de Yoga no SESI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-xl font-bold text-brand-forest mb-2">Aulões Comunitários</h3>
-            <p class="text-sm text-[#555E57]">Histórico marcante de eventos especiais com dezenas de praticantes reunidos.</p>
-          </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Aulões Comunitários</h3>
+          <p class="text-sm text-[#475C6A]">Histórico de grandes encontros que difundem o Yoga com seriedade e acessibilidade.</p>
         </div>
+      </div>
 
-        <div class="bg-white rounded-3xl overflow-hidden border border-brand-sand shadow-sm flex flex-col">
-          <div class="h-56 overflow-hidden">
-            <img src="Imagens/Alunos_aula_grupo_estudo1.jpg" alt="Grupo de estudo e alunos de Yoga" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-          </div>
-          <div class="p-6">
-            <h3 class="font-serif text-xl font-bold text-brand-forest mb-2">Grupos de Estudo</h3>
-            <p class="text-sm text-[#555E57]">Aprofundamento filosófico e prático em um ambiente fraterno e acolhedor.</p>
-          </div>
+      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
+        <div class="h-56 overflow-hidden">
+          <img src="Imagens/Alunos_aula_grupo_estudo1.jpg" alt="Alunos e grupos de estudo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-6">
+          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Grupos de Estudo</h3>
+          <p class="text-sm text-[#475C6A]">Aprofundamento filosófico e prático em um ambiente fraterno e acolhedor.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HORÁRIOS & TURMAS -->
-  <section id="horarios" class="py-20 px-6 max-w-4xl mx-auto">
+  <!-- HORÁRIOS & TURMAS (GRADE LIMPA EM 3 COLUNAS) -->
+  <section id="horarios" class="py-20 px-6 max-w-5xl mx-auto">
     <div class="text-center space-y-4 mb-12">
-      <span class="text-xs font-semibold tracking-widest text-brand-sage uppercase">Organize sua rotina</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-brand-forest font-bold">Turmas e Horários</h2>
-      <p class="text-base text-[#555E57]">
-        Turmas com número limitado de alunos para assegurar acompanhamento atento. Entre em contato para consultar a disponibilidade de vagas.
+      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas e Horários</h2>
+      <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
+        Práticas conduzidas com rigor técnico e acompanhamento atento a cada aluno.
       </p>
     </div>
-    
-    <div class="bg-white rounded-3xl p-8 border border-brand-sand shadow-sm space-y-6">
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-brand-sand/80 gap-4">
-        <div>
-          <h3 class="font-serif text-xl font-bold text-brand-forest">Período da Manhã</h3>
-          <p class="text-sm text-[#555E57]">Comece o dia com disposição, concentração e vitalidade renovada.</p>
-        </div>
-        <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20vagas%20para%20as%20turmas%20da%20Manh%C3%A3" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-sage hover:text-brand-forest">
-          <span>Consultar Vagas</span>
-          <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
+
+    <!-- Tabela de Horários Limpa -->
+    <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-8">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-brand-tint text-brand-navy text-xs uppercase tracking-wider font-semibold border-b border-brand-border">
+              <th scope="col" class="py-4 px-6 md:px-8">Dia da Semana</th>
+              <th scope="col" class="py-4 px-6 md:px-8">Horário</th>
+              <th scope="col" class="py-4 px-6 md:px-8">Modalidade</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-brand-border/70 text-sm md:text-base">
+            <!-- Segunda-feira -->
+            <tr class="hover:bg-brand-ice/80 transition-colors">
+              <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
+                Segunda-feira
+              </td>
+              <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
+            </tr>
+
+            <!-- Quarta-feira -->
+            <tr class="hover:bg-brand-ice/80 transition-colors">
+              <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
+                Quarta-feira
+              </td>
+              <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
+            </tr>
+
+            <!-- Sexta-feira -->
+            <tr class="hover:bg-brand-ice/80 transition-colors">
+              <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
+                Sexta-feira
+              </td>
+              <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
+            </tr>
+
+            <!-- Sábado -->
+            <tr class="hover:bg-brand-ice/80 transition-colors">
+              <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
+                Sábado
+              </td>
+              <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">11:00 às 12:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Chamada Única para WhatsApp -->
+    <div class="bg-brand-tint/60 rounded-3xl p-6 md:p-8 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
+      <div class="space-y-1">
+        <h4 class="font-serif text-xl font-bold text-brand-navy flex items-center justify-center md:justify-start gap-2">
+          <i data-lucide="info" class="w-5 h-5 text-brand-sky shrink-0"></i>
+          Aulas Experimentais e Informações sobre Vagas
+        </h4>
+        <p class="text-sm text-[#475C6A]">
+          Para preservar a tranquilidade das práticas, <strong>todas as vagas e aulas experimentais devem ser previamente agendadas pelo WhatsApp (11) 98187-5911</strong>.
+        </p>
       </div>
 
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 border-b border-brand-sand/80 gap-4">
-        <div>
-          <h3 class="font-serif text-xl font-bold text-brand-forest">Período da Tarde</h3>
-          <p class="text-sm text-[#555E57]">Horários intermediários para equilibrar a rotina e aliviar tensões.</p>
-        </div>
-        <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20vagas%20para%20as%20turmas%20da%20Tarde" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-sage hover:text-brand-forest">
-          <span>Consultar Vagas</span>
-          <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-      </div>
-
-      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-        <div>
-          <h3 class="font-serif text-xl font-bold text-brand-forest">Período da Noite</h3>
-          <p class="text-sm text-[#555E57]">Práticas focadas em descompressão, liberação do estresse e relaxamento profundo.</p>
-        </div>
-        <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20consultar%20vagas%20para%20as%20turmas%20da%20Noite" target="_blank" class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-sage hover:text-brand-forest">
-          <span>Consultar Vagas</span>
-          <i data-lucide="chevron-right" class="w-4 h-4"></i>
-        </a>
-      </div>
+      <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20vagas%20e%20agendar%20uma%20aula%20experimental" 
+         target="_blank" 
+         class="inline-flex items-center gap-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white px-7 py-3.5 rounded-full font-bold text-sm shrink-0 transition-all shadow-md">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>Agendar pelo WhatsApp</span>
+      </a>
     </div>
   </section>
 
   <!-- LOCALIZAÇÃO E CONTATO DIRETO -->
-  <section id="localizacao" class="py-20 px-6 bg-brand-forest text-white">
+  <section id="localizacao" class="py-20 px-6 bg-brand-navy text-white">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
       <div class="lg:col-span-5 space-y-6">
-        <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase">Contato & Visitas</span>
+        <span class="text-xs font-semibold tracking-widest text-brand-tint uppercase">Contato & Visitas</span>
         <h2 class="font-serif text-3xl sm:text-4xl font-bold">Venha nos conhecer</h2>
         <p class="text-white/80 leading-relaxed text-sm">
-          Estamos localizados em rua calma e de fácil acesso em Osasco. Agende uma conversa ou aula experimental diretamente pelo WhatsApp.
+          Estamos localizados em rua de fácil acesso em Osasco. Agende uma visita ou aula experimental diretamente pelo WhatsApp.
         </p>
 
+        <!-- Lista de Informações (com a tag </div> fechada corretamente) -->
         <div class="space-y-4 pt-4 text-sm">
           <div class="flex items-start gap-4">
-            <i data-lucide="map-pin" class="w-5 h-5 text-brand-gold shrink-0 mt-1"></i>
+            <i data-lucide="map-pin" class="w-5 h-5 text-brand-sky shrink-0 mt-1"></i>
             <div>
               <p class="font-semibold text-white">Endereço:</p>
               <p class="text-white/70">Rua Albino Teixeira Pinto, 31 - Osasco - SP</p>
@@ -356,19 +479,10 @@
           </div>
 
           <div class="flex items-start gap-4">
-            <i data-lucide="phone" class="w-5 h-5 text-brand-gold shrink-0 mt-1"></i>
+            <i data-lucide="phone" class="w-5 h-5 text-brand-sky shrink-0 mt-1"></i>
             <div>
-              <p class="font-semibold text-white">Telefones / WhatsApp:</p>
+              <p class="font-semibold text-white">Telefone / WhatsApp:</p>
               <p class="text-white/70">(11) 9.8187-5911</p>
-              <p class="text-white/70">(11) 9.7637-6982</p>
-            </div>
-          </div>
-
-          <div class="flex items-start gap-4">
-            <i data-lucide="mail" class="w-5 h-5 text-brand-gold shrink-0 mt-1"></i>
-            <div>
-              <p class="font-semibold text-white">E-mail:</p>
-              <a href="mailto:contato.arynanda@gmail.com" class="text-white/70 hover:underline">contato.arynanda@gmail.com</a>
             </div>
           </div>
         </div>
@@ -399,7 +513,7 @@
   </section>
 
   <!-- RODAPÉ -->
-  <footer class="py-8 px-6 bg-[#1A2922] text-white/60 text-xs text-center border-t border-white/5">
+  <footer class="py-8 px-6 bg-brand-deep text-white/60 text-xs text-center border-t border-white/5">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <p>© Instituto de Yoga Clássico Arynanda (IYCA). Todos os direitos reservados.</p>
       <p>Ética • Tradição • Seriedade</p>
