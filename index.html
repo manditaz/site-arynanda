@@ -56,7 +56,7 @@
       </a>
 
       <!-- Menu Desktop -->
-      <nav class="hidden xl:flex items-center space-x-6 text-sm font-medium text-brand-navy/80">
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-brand-navy/80">
         <a href="#inicio" class="hover:text-brand-sky transition-colors">Início</a>
         <a href="#historia" class="hover:text-brand-sky transition-colors">Nossa História</a>
         <a href="#sobre" class="hover:text-brand-sky transition-colors">O Hatha Yoga</a>
@@ -67,22 +67,14 @@
         <a href="#localizacao" class="hover:text-brand-sky transition-colors">Contato</a>
       </nav>
 
-      <!-- Botão Header -->
-      <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20aulas%20do%20Instituto%20Arynanda" 
-         target="_blank" 
-         class="hidden sm:inline-flex items-center gap-2 bg-brand-sky hover:bg-brand-navy text-white px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all shadow-sm">
-        <i data-lucide="message-circle" class="w-4 h-4"></i>
-        <span>Agendar Aula</span>
-      </a>
-
       <!-- Botão Menu Mobile -->
-      <button id="mobile-menu-btn" class="xl:hidden text-brand-navy p-2 focus:outline-none" aria-label="Abrir menu">
+      <button id="mobile-menu-btn" class="lg:hidden text-brand-navy p-2 focus:outline-none" aria-label="Abrir menu">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
     </div>
 
     <!-- Menu Dropdown Mobile -->
-    <div id="mobile-menu" class="hidden xl:hidden bg-brand-ice border-b border-brand-border px-6 py-5 flex flex-col space-y-4 shadow-lg">
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-ice border-b border-brand-border px-6 py-5 flex flex-col space-y-4 shadow-lg">
       <a href="#inicio" class="mobile-nav-link text-brand-navy font-medium">Início</a>
       <a href="#historia" class="mobile-nav-link text-brand-navy font-medium">Nossa História</a>
       <a href="#sobre" class="mobile-nav-link text-brand-navy font-medium">O Hatha Yoga</a>
@@ -91,12 +83,6 @@
       <a href="#comunidade" class="mobile-nav-link text-brand-navy font-medium">Vivências</a>
       <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários</a>
       <a href="#localizacao" class="mobile-nav-link text-brand-navy font-medium">Contato</a>
-      <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20aulas%20do%20Instituto%20Arynanda" 
-         target="_blank" 
-         class="inline-flex items-center justify-center gap-2 bg-brand-sky text-white px-5 py-3 rounded-xl text-xs font-semibold tracking-wider uppercase">
-        <i data-lucide="message-circle" class="w-4 h-4"></i>
-        <span>Falar no WhatsApp</span>
-      </a>
     </div>
   </header>
 
@@ -114,14 +100,9 @@
           Prática milenar transmitida com fidelidade e respeito ao ritmo de cada praticante. Desenvolva vitalidade, respiração e tranquilidade em um ambiente sereno e acolhedor.
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-          <a href="https://wa.me/5511981875911?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20aula%20experimental" 
-             target="_blank" 
-             class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-sky hover:bg-brand-navy text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
-            <i data-lucide="message-circle" class="w-5 h-5"></i>
-            <span>Agendar Aula Experimental</span>
-          </a>
-          <a href="#historia" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border border-brand-navy/20 hover:border-brand-navy text-brand-navy px-7 py-3.5 rounded-full font-semibold transition-colors">
+          <a href="#historia" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-brand-sky hover:bg-brand-navy text-white px-8 py-3.5 rounded-full font-semibold transition-all shadow-md hover:shadow-lg">
             <span>Conheça Nossa História</span>
+            <i data-lucide="arrow-down" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
@@ -161,17 +142,18 @@
     </div>
   </section>
 
-  <!-- NOSSA HISTÓRIA & TRADIÇÃO -->
+  <!-- NOSSA HISTÓRIA & TRADIÇÃO (IMAGENS PERFEITAMENTE ALINHADAS) -->
   <section id="historia" class="py-20 px-6 max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+      <!-- Grid de 2 imagens niveladas -->
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-start">
         <div class="space-y-3">
           <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_jovem.jpg" alt="Prof. Ari jovem na prática do Yoga" class="w-full h-full object-cover">
           </div>
           <p class="text-[11px] text-center text-[#556976] italic">Estudo e dedicação desde a juventude</p>
         </div>
-        <div class="space-y-3 pt-6">
+        <div class="space-y-3">
           <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_alunos.jpg" alt="Prof. Ari com alunos e professores" class="w-full h-full object-cover">
           </div>
@@ -205,7 +187,7 @@
     </div>
   </section>
 
-  <!-- FILOSOFIA & O QUE É O YOGA -->
+  <!-- FILOSOFIA & O QUE É O YOGA (IMAGENS PERFEITAMENTE ALINHADAS) -->
   <section id="sobre" class="py-20 px-6 bg-brand-tint/40">
     <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 space-y-6">
@@ -237,11 +219,12 @@
         </div>
       </div>
 
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+      <!-- Duas imagens em preto e branco perfeitamente niveladas na horizontal -->
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-center">
         <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
           <img src="Imagens/Aluna_em_preto_branco1.png" alt="Postura clássica de Yoga" class="w-full h-full object-cover">
         </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border mt-6">
+        <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
           <img src="Imagens/Aluna_em_preto_branco2.png" alt="Concentração e respiração" class="w-full h-full object-cover">
         </div>
       </div>
@@ -371,17 +354,17 @@
     </div>
   </section>
 
-  <!-- HORÁRIOS & TURMAS (GRADE LIMPA EM 3 COLUNAS) -->
+  <!-- HORÁRIOS & TURMAS -->
   <section id="horarios" class="py-20 px-6 max-w-5xl mx-auto">
     <div class="text-center space-y-4 mb-12">
       <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal</span>
       <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas e Horários</h2>
       <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
-        Práticas conduzidas com rigor técnico e acompanhamento atento a cada aluno.
+        Práticas conduzidas com rigor técnico e turmas reduzidas para assegurar acompanhamento atento a cada aluno.
       </p>
     </div>
 
-    <!-- Tabela de Horários Limpa -->
+    <!-- Tabela de Horários -->
     <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-8">
       <div class="overflow-x-auto">
         <table class="w-full text-left border-collapse">
@@ -437,7 +420,7 @@
       </div>
     </div>
 
-    <!-- Chamada Única para WhatsApp -->
+    <!-- Chamada Centralizada para Agendamento -->
     <div class="bg-brand-tint/60 rounded-3xl p-6 md:p-8 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
       <div class="space-y-1">
         <h4 class="font-serif text-xl font-bold text-brand-navy flex items-center justify-center md:justify-start gap-2">
@@ -468,7 +451,6 @@
           Estamos localizados em rua de fácil acesso em Osasco. Agende uma visita ou aula experimental diretamente pelo WhatsApp.
         </p>
 
-        <!-- Lista de Informações (com a tag </div> fechada corretamente) -->
         <div class="space-y-4 pt-4 text-sm">
           <div class="flex items-start gap-4">
             <i data-lucide="map-pin" class="w-5 h-5 text-brand-sky shrink-0 mt-1"></i>
