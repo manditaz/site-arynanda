@@ -18,7 +18,7 @@
   <meta property="og:description" content="Práticas de Hatha Yoga Clássico em Osasco. Acolhimento, conexão e desenvolvimento integral. Venha nos conhecer!">
   <meta property="og:image" content="https://www.arynandayoga.com.br/Imagens/postura1.jpeg">
 
-  <!-- SCHEMA.ORG / DADOS ESTRUTURADOS PARA O GOOGLE ENTENDER O NEGÓCIO LOCAL -->
+  <!-- SCHEMA.ORG / DADOS ESTRUTURADOS -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -34,7 +34,7 @@
       "addressRegion": "SP",
       "addressCountry": "BR"
     },
-    "description": "Escola tradicional de Hatha Yoga em Osasco. Aulas presenciais, meditação e práticas focadas no bem-estar físico e mental, mantendo a autenticidade do Yoga Clássico."
+    "description": "Escola tradicional de Hatha Yoga em Osasco. Aulas presenciais, meditação e práticas focadas no bem-estar físico e mental."
   }
   </script>
 
@@ -76,7 +76,7 @@
 </head>
 <body class="bg-brand-ice text-[#24333D] font-sans antialiased pb-16 lg:pb-0 selection:bg-brand-sky selection:text-white">
 
-  <!-- BARRA DE NAVEGAÇÃO SUPERIOR -->
+  <!-- BARRA DE NAVEGAÇÃO -->
   <header class="fixed top-0 left-0 right-0 z-40 bg-brand-ice/95 backdrop-blur-md border-b border-brand-border/80 shadow-sm transition-all">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#inicio" class="flex items-center gap-3">
@@ -94,19 +94,27 @@
         <a href="#sobre" class="hover:text-brand-sky transition-colors">O Hatha Yoga</a>
         <a href="#pratica" class="hover:text-brand-sky transition-colors">Asanas</a>
         <a href="#espaco" class="hover:text-brand-sky transition-colors">Espaço</a>
-        <a href="#horarios" class="hover:text-brand-sky transition-colors">Horários</a>
+        <a href="#horarios" class="hover:text-brand-sky transition-colors">Horários & Valores</a>
         <a href="#localizacao" class="hover:text-brand-sky transition-colors">Contato</a>
         
-        <!-- Ícone do Instagram no Menu -->
+        <!-- Instagram Destaque Desktop -->
         <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" aria-label="Nosso Instagram" class="text-brand-sky hover:text-brand-navy transition-all hover:scale-110 ml-2">
           <i data-lucide="instagram" class="w-5 h-5"></i>
         </a>
       </nav>
 
-      <!-- Botão Menu Mobile -->
-      <button id="mobile-menu-btn" class="lg:hidden text-brand-navy p-2 focus:outline-none" aria-label="Abrir menu">
-        <i data-lucide="menu" class="w-6 h-6"></i>
-      </button>
+      <!-- Ações Mobile (Instagram + Menu) -->
+      <div class="flex items-center gap-4 lg:hidden">
+        <!-- Instagram Destaque Mobile (Sempre visível) -->
+        <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" aria-label="Nosso Instagram" class="text-brand-sky hover:text-brand-navy active:scale-95 transition-all">
+          <i data-lucide="instagram" class="w-6 h-6"></i>
+        </a>
+        
+        <!-- Botão Hambúrguer -->
+        <button id="mobile-menu-btn" class="text-brand-navy p-1 focus:outline-none" aria-label="Abrir menu">
+          <i data-lucide="menu" class="w-7 h-7"></i>
+        </button>
+      </div>
     </div>
 
     <!-- Menu Dropdown Mobile -->
@@ -116,14 +124,9 @@
       <a href="#sobre" class="mobile-nav-link text-brand-navy font-medium">O Hatha Yoga</a>
       <a href="#pratica" class="mobile-nav-link text-brand-navy font-medium">Asanas</a>
       <a href="#espaco" class="mobile-nav-link text-brand-navy font-medium">Espaço</a>
-      <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários</a>
+      <a href="#comunidade" class="mobile-nav-link text-brand-navy font-medium">Vivências</a>
+      <a href="#horarios" class="mobile-nav-link text-brand-navy font-medium">Horários & Valores</a>
       <a href="#localizacao" class="mobile-nav-link text-brand-navy font-medium">Contato</a>
-      
-      <!-- Link do Instagram Mobile -->
-      <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" class="mobile-nav-link flex items-center gap-2 text-brand-navy font-medium pt-3 border-t border-brand-border/60">
-        <i data-lucide="instagram" class="w-5 h-5 text-brand-sky"></i>
-        Siga @arynanda.yoga
-      </a>
     </div>
   </header>
 
@@ -152,7 +155,7 @@
       <div class="lg:col-span-5 flex justify-center">
         <div class="relative w-full max-w-md rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-white group">
           <img src="Imagens/postura1.jpeg" 
-               alt="Prática de Yoga em Osasco no Instituto Arynanda" 
+               alt="Prática de Yoga no Instituto Arynanda" 
                class="w-full h-auto max-h-[440px] object-cover group-hover:scale-[1.02] transition-transform duration-500">
           <div class="p-4 bg-white text-center border-t border-brand-border">
             <p class="font-serif text-brand-navy font-bold text-base">Acolhimento, Conexão e Prática</p>
@@ -185,8 +188,9 @@
 
   <!-- NOSSA HISTÓRIA & TRADIÇÃO -->
   <section id="historia" class="py-20 px-6 max-w-6xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Grid de 2 imagens niveladas -->
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-start">
         <div class="space-y-3">
           <div class="rounded-2xl overflow-hidden shadow-md aspect-[3/4] bg-brand-tint border border-brand-border">
             <img src="Imagens/Historia_prof_Ari_jovem.jpg" alt="Prof. Ari jovem na prática do Yoga" class="w-full h-full object-cover">
@@ -229,7 +233,7 @@
 
   <!-- FILOSOFIA & O QUE É O YOGA -->
   <section id="sobre" class="py-20 px-6 bg-brand-tint/40">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-7 space-y-6">
         <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">O Método</span>
         <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">O que é o Hatha Yoga Clássico?</h2>
@@ -259,7 +263,8 @@
         </div>
       </div>
 
-      <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+      <!-- Duas imagens em preto e branco niveladas na horizontal -->
+      <div class="lg:col-span-5 grid grid-cols-2 gap-4 items-center">
         <div class="rounded-2xl overflow-hidden shadow-lg aspect-[3/4] bg-white border border-brand-border">
           <img src="Imagens/Aluna_em_preto_branco1.png" alt="Postura clássica de Yoga" class="w-full h-full object-cover">
         </div>
@@ -281,6 +286,7 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Card Sirsasana -->
       <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
         <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
           <img src="Imagens/postura2.jpeg" alt="Sirsasana - Postura Invertida" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
@@ -293,6 +299,7 @@
         </div>
       </div>
 
+      <!-- Card Mayurasana -->
       <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
         <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
           <img src="Imagens/postura3.jpeg" alt="Mayurasana - Postura do Pavão" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
@@ -305,6 +312,7 @@
         </div>
       </div>
 
+      <!-- Card Estabilidade -->
       <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col group">
         <div class="p-4 bg-brand-tint/40 flex justify-center items-center">
           <img src="Imagens/postura4.jpeg" alt="Fortalecendo o corpo, serenando a mente" class="h-64 object-contain rounded-2xl group-hover:scale-105 transition-transform duration-300">
@@ -347,101 +355,78 @@
     </div>
   </section>
 
-  <!-- VIVÊNCIAS & COMUNIDADE -->
-  <section id="comunidade" class="py-20 px-6 max-w-6xl mx-auto">
-    <div class="text-center space-y-4 mb-12">
-      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Comunidade & Prática Coletiva</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Vivências e Aulões</h2>
-      <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
-        Práticas especiais em contato com a natureza e eventos que celebram a união de alunos e professores.
-      </p>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
-        <div class="h-56 overflow-hidden">
-          <img src="Imagens/aula_parque.jpeg" alt="Aula de Yoga ao ar livre no parque" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="p-6">
-          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Yoga ao Ar Livre</h3>
-          <p class="text-sm text-[#475C6A]">Práticas ao ar livre que renovam as energias e expandem a respiração.</p>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
-        <div class="h-56 overflow-hidden">
-          <img src="Imagens/Aulao_no_Sesi.jpeg" alt="Aulão de Yoga no SESI" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="p-6">
-          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Aulões Comunitários</h3>
-          <p class="text-sm text-[#475C6A]">Histórico de grandes encontros que difundem o Yoga com seriedade e acessibilidade.</p>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-3xl overflow-hidden border border-brand-border shadow-sm flex flex-col">
-        <div class="h-56 overflow-hidden">
-          <img src="Imagens/Alunos_aula_grupo_estudo1.jpg" alt="Alunos e grupos de estudo" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-        </div>
-        <div class="p-6">
-          <h3 class="font-serif text-xl font-bold text-brand-navy mb-2">Grupos de Estudo</h3>
-          <p class="text-sm text-[#475C6A]">Aprofundamento filosófico e prático em um ambiente fraterno e acolhedor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HORÁRIOS & TURMAS -->
+  <!-- HORÁRIOS & TURMAS (COM DURAÇÃO E TABELA DE VALORES) -->
   <section id="horarios" class="py-20 px-6 max-w-5xl mx-auto">
-    <div class="text-center space-y-4 mb-12">
-      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal</span>
-      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas e Horários</h2>
+    <div class="text-center space-y-4 mb-10">
+      <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Grade Semanal & Investimento</span>
+      <h2 class="font-serif text-3xl sm:text-4xl text-brand-navy font-bold">Turmas, Horários e Valores</h2>
       <p class="text-base text-[#475C6A] max-w-2xl mx-auto">
         Práticas conduzidas com rigor técnico e turmas reduzidas para assegurar acompanhamento atento a cada aluno.
       </p>
+
+      <!-- Badge de Destaque para Duração das Aulas -->
+      <div class="pt-2">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-tint border border-brand-border text-brand-navy text-xs font-semibold">
+          <i data-lucide="clock" class="w-4 h-4 text-brand-sky"></i>
+          <span>Duração de cada aula: <strong>1h30 (90 minutos)</strong></span>
+        </div>
+      </div>
     </div>
 
-    <!-- Tabela de Horários -->
-    <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-8">
+    <!-- Tabela de Horários com Coluna de Duração -->
+    <div class="bg-white rounded-3xl border border-brand-border shadow-sm overflow-hidden mb-12">
       <div class="overflow-x-auto">
         <table class="w-full text-left border-collapse">
           <thead>
             <tr class="bg-brand-tint text-brand-navy text-xs uppercase tracking-wider font-semibold border-b border-brand-border">
               <th scope="col" class="py-4 px-6 md:px-8">Dia da Semana</th>
               <th scope="col" class="py-4 px-6 md:px-8">Horário</th>
+              <th scope="col" class="py-4 px-6 md:px-8">Duração</th>
               <th scope="col" class="py-4 px-6 md:px-8">Modalidade</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-brand-border/70 text-sm md:text-base">
+            <!-- Segunda-feira -->
             <tr class="hover:bg-brand-ice/80 transition-colors">
               <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
                 <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
                 Segunda-feira
               </td>
               <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976] font-medium">1h30</td>
               <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
             </tr>
+
+            <!-- Quarta-feira -->
             <tr class="hover:bg-brand-ice/80 transition-colors">
               <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
                 <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
                 Quarta-feira
               </td>
               <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976] font-medium">1h30</td>
               <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
             </tr>
+
+            <!-- Sexta-feira -->
             <tr class="hover:bg-brand-ice/80 transition-colors">
               <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
                 <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
                 Sexta-feira
               </td>
               <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">19:00 às 20:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976] font-medium">1h30</td>
               <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
             </tr>
+
+            <!-- Sábado -->
             <tr class="hover:bg-brand-ice/80 transition-colors">
               <td class="py-5 px-6 md:px-8 font-semibold text-brand-navy flex items-center gap-3">
                 <span class="w-2.5 h-2.5 rounded-full bg-brand-sky"></span>
                 Sábado
               </td>
               <td class="py-5 px-6 md:px-8 font-medium text-[#2C3E50]">11:00 às 12:30</td>
+              <td class="py-5 px-6 md:px-8 text-[#556976] font-medium">1h30</td>
               <td class="py-5 px-6 md:px-8 text-[#556976]">Hatha Yoga Clássico</td>
             </tr>
           </tbody>
@@ -449,7 +434,60 @@
       </div>
     </div>
 
-    <!-- Chamada Centralizada para Agendamento -->
+    <!-- BLOCO DE VALORES / PLANOS MENSAIS -->
+    <div class="mb-10">
+      <div class="text-center mb-6">
+        <span class="text-xs font-semibold tracking-widest text-brand-sky uppercase">Planos de Prática</span>
+        <h3 class="font-serif text-2xl font-bold text-brand-navy">Investimento Mensal</h3>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- 1x por semana -->
+        <div class="bg-white rounded-3xl p-7 border border-brand-border shadow-sm text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-sky bg-brand-tint px-3 py-1 rounded-full mb-4">1x por Semana</span>
+            <div class="my-3">
+              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 160</span>
+              <span class="text-xs text-[#556976] font-medium">/ mês</span>
+            </div>
+            <p class="text-xs text-[#556976] leading-relaxed">
+              1 aula semanal com <strong>1h30</strong> de duração. Ideal para quem está iniciando ou integrando à rotina.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2x por semana (Destaque sutil) -->
+        <div class="bg-brand-tint/70 rounded-3xl p-7 border-2 border-brand-sky shadow-md text-center flex flex-col justify-between relative hover:shadow-lg transition-shadow">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-brand-sky text-white text-[10px] uppercase font-bold tracking-widest px-3.5 py-0.5 rounded-full shadow-sm">Mais Procurado</span>
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-navy bg-white/80 px-3 py-1 rounded-full mb-4">2x por Semana</span>
+            <div class="my-3">
+              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 180</span>
+              <span class="text-xs text-[#556976] font-medium">/ mês</span>
+            </div>
+            <p class="text-xs text-[#475C6A] leading-relaxed">
+              2 aulas semanais de <strong>1h30</strong>. Ritmo equilibrado para maior constância e benefícios físicos e mentais.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3x por semana -->
+        <div class="bg-white rounded-3xl p-7 border border-brand-border shadow-sm text-center flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <span class="inline-block text-xs font-bold uppercase tracking-wider text-brand-sky bg-brand-tint px-3 py-1 rounded-full mb-4">3x por Semana</span>
+            <div class="my-3">
+              <span class="font-serif text-4xl font-bold text-brand-navy">R$ 200</span>
+              <span class="text-xs text-[#556976] font-medium">/ mês</span>
+            </div>
+            <p class="text-xs text-[#556976] leading-relaxed">
+              3 aulas semanais de <strong>1h30</strong>. Prática intensiva para maior aprofundamento e vigor interior.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chamada Centralizada para Agendamento e Vagas -->
     <div class="bg-brand-tint/60 rounded-3xl p-6 md:p-8 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left shadow-sm">
       <div class="space-y-1">
         <h4 class="font-serif text-xl font-bold text-brand-navy flex items-center justify-center md:justify-start gap-2">
@@ -496,17 +534,6 @@
               <p class="text-white/70">(11) 9.8187-5911</p>
             </div>
           </div>
-          
-          <!-- Adicionado Link do Instagram na seção de contatos -->
-          <div class="flex items-start gap-4">
-            <i data-lucide="instagram" class="w-5 h-5 text-brand-sky shrink-0 mt-1"></i>
-            <div>
-              <p class="font-semibold text-white">Instagram:</p>
-              <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" class="text-white/70 hover:text-brand-sky transition-colors">
-                @arynanda.yoga
-              </a>
-            </div>
-          </div>
         </div>
 
         <div class="pt-4">
@@ -534,17 +561,18 @@
     </div>
   </section>
 
-  <!-- RODAPÉ -->
+  <!-- RODAPÉ COM INSTAGRAM DESTACADO -->
   <footer class="py-8 px-6 bg-brand-deep text-white/60 text-xs border-t border-white/5">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-      <p class="text-center md:text-left">© Instituto de Yoga Clássico Arynanda (IYCA). Todos os direitos reservados.</p>
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <p>© Instituto de Yoga Clássico Arynanda (IYCA). Todos os direitos reservados.</p>
       
-      <div class="flex items-center gap-6">
+      <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
         <p>Ética • Tradição • Seriedade</p>
-        <div class="w-px h-4 bg-white/20 hidden md:block"></div>
-        <!-- Link Instagram no Rodapé -->
-        <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" aria-label="Nosso Instagram" class="hover:text-brand-sky transition-colors">
-          <i data-lucide="instagram" class="w-4 h-4"></i>
+        <div class="w-px h-4 bg-white/20 hidden sm:block"></div>
+        <!-- Instagram no Rodapé -->
+        <a href="https://www.instagram.com/arynanda.yoga/" target="_blank" aria-label="Nosso Instagram" class="flex items-center gap-2 hover:text-brand-sky transition-colors text-white">
+          <i data-lucide="instagram" class="w-5 h-5"></i>
+          <span class="sm:hidden font-medium">Siga nosso Instagram</span>
         </a>
       </div>
     </div>
@@ -564,9 +592,9 @@
       <span class="text-[10px] font-medium mt-1">Asanas</span>
     </a>
 
-    <!-- Horários (Destaque Central Flutuante) -->
+    <!-- Horários & Valores (Destaque Central Flutuante) -->
     <a href="#horarios" class="flex flex-col items-center -mt-5 bg-brand-sky text-white p-3 rounded-full shadow-lg border-2 border-white active:scale-95 transition-transform" aria-label="Ver horários">
-      <i data-lucide="clock" class="w-5 h-5"></i>
+      <i data-lucide="calendar" class="w-5 h-5"></i>
     </a>
 
     <!-- Espaço -->
@@ -582,7 +610,7 @@
     </a>
   </nav>
 
-  <!-- BOTÃO FLUTUANTE DE WHATSAPP (APENAS DESKTOP - NO MOBILE JÁ ESTÁ NA BARRA INFERIOR) -->
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (APENAS DESKTOP) -->
   <a href="https://wa.me/5511981875911?text=Ol%C3%A1%21%20%F0%9F%A7%98%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%8C%BF%20Tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20as%20aulas%20de%20Yoga%20e%20agendar%20uma%20aula%20experimental.%20%E2%9C%A8" 
      target="_blank" 
      class="hidden lg:flex fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20ba59] text-white p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 items-center justify-center group"
